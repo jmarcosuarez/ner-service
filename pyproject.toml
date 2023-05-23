@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ner-service"
+version = "0.1.0"
+description = "Example recognition service"
+authors = ["marcos <jmarcosuarez@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ner_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+spacy = "^3.5.3"
+en_core_web_sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl" }
+fastapi = "^0.95.2"
+uvicorn = "^0.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
